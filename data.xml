@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<insuranceData>
+<products>
+    <product id="1" category="health" popular="true">
+        <name>Comprehensive Health Insurance</name>
+        <description>Complete health coverage for you and your family</description>
+        <price>450</price>
+        <coverage>2000000</coverage>
+        <image>img/17.jpg</image>
+        <features>
+            <feature>Coverage for preventive care and wellness visits</feature>
+            <feature>Emergency and hospitalization services</feature>
+            <feature>Prescription drug coverage</feature>
+        </features>
+    </product>
+    <product id="2" category="auto" popular="true">
+        <name>Full Coverage Auto Insurance</name>
+        <description>Complete protection for your vehicle</description>
+        <price>125</price>
+        <coverage>500000</coverage>
+        <image>img/16.jpg</image>
+        <features>
+            <feature>Collision and comprehensive coverage</feature>
+            <feature>Bodily injury and property damage liability</feature>
+            <feature>Uninsured/underinsured motorist protection</feature>
+        </features>
+    </product>
+    <product id="3" category="home" popular="false">
+        <name>Standard Homeowners Insurance</name>
+        <description>Comprehensive protection for your home</description>
+        <price>150</price>
+        <coverage>1000000</coverage>
+        <image>img/13.jpg</image>
+        <features>
+            <feature>Dwelling coverage for home structure</feature>
+            <feature>Personal property protection</feature>
+            <feature>Liability coverage</feature>
+        </features>
+    </product>
+    <product id="4" category="health" popular="false">
+        <name>Basic Health Insurance</name>
+        <description>Essential health coverage at affordable rates</description>
+        <price>250</price>
+        <coverage>500000</coverage>
+        <image>img/15.jpg</image>
+        <features>
+            <feature>Emergency services coverage</feature>
+            <feature>Basic preventive care</feature>
+            <feature>Generic prescription drugs</feature>
+        </features>
+    </product>
+    <product id="5" category="auto" popular="false">
+        <name>Basic Auto Insurance</name>
+        <description>Affordable liability coverage</description>
+        <price>65</price>
+        <coverage>100000</coverage>
+        <image>img/14.jpg</image>
+        <features>
+            <feature>Bodily injury liability</feature>
+            <feature>Property damage liability</feature>
+            <feature>State minimum coverage</feature>
+        </features>
+    </product>
+    <product id="6" category="life" popular="true">
+        <name>Term Life Insurance</name>
+        <description>Financial protection for your family</description>
+        <price>35</price>
+        <coverage>5000000</coverage>
+        <image>img/12.jpg</image>
+        <features>
+            <feature>Coverage for 10, 20, or 30 years</feature>
+            <feature>Guaranteed death benefit</feature>
+            <feature>Fixed premiums</feature>
+        </features>
+    </product>
+    <product id="7" category="travel" popular="false">
+        <name>International Travel Insurance</name>
+        <description>Travel worry-free with comprehensive coverage</description>
+        <price>75</price>
+        <coverage>500000</coverage>
+        <image>img/10.jpg</image>
+        <features>
+            <feature>Emergency medical coverage abroad</feature>
+            <feature>Trip cancellation and interruption</feature>
+            <feature>Baggage loss and delay coverage</feature>
+        </features>
+    </product>
+    <product id="8" category="business" popular="false">
+        <name>Business Liability Insurance</name>
+        <description>Essential protection for your business</description>
+        <price>200</price>
+        <coverage>3000000</coverage>
+        <image>img/11.jpg</image>
+        <features>
+            <feature>General liability coverage</feature>
+            <feature>Professional liability protection</feature>
+            <feature>Product liability coverage</feature>
+        </features>
+    </product>
+</products>
+</insuranceData>

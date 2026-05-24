@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Insurance - SecureLife Insurance</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="burgerstyle/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar-container" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="SecureLife Insurance Home">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="#2563eb"/>
+                    <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>SecureLife Insurance</span>
+            </a>
+            
+             <input type="checkbox" id="menu-toggle">
+    
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+        <li><a href="policies.html" class="nav-link">My Policies</a></li>
+        <li><a href="policies.html" class="account-link">Account</a></li>
+        <li><a href="apply.html" class="btn btn-primary">Get Quote</a></li> 
+    </ul>
+        </nav>
+    </header>
+
+    <main class="apply-page">
+        <div class="apply-header">
+            <div class="apply-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+            </div>
+            <div class="apply-title">
+                <h1>SecureLife Insurance</h1>
+                <p>Complete the form below to submit your insurance application</p>
+            </div>
+        </div>
+        <div class="Apply-tit">
+               <h2>Apply for Insurance</h2>
+        </div>
+        <div class="apply-container">
+            <!-- Left Side - Form -->
+            <div class="apply-form-section">
+                <form id="insuranceApplication" class="application-form">
+                    <!-- Product Selection -->
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3>Select Insurance Product</h3>
+                            <p>Choose the insurance plan you'd like to apply for</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="applyProduct">Insurance Product *</label>
+                            <div class="select-wrapper">
+                                <select id="applyProduct" name="product" required>
+                                    <option value="">Choose a product...</option>
+                                    <option value="health-comprehensive" data-name="Comprehensive Health Insurance" data-price="450" data-coverage="2000000">Comprehensive Health Insurance - $450/month</option>
+                                    <option value="health-basic" data-name="Basic Health Insurance" data-price="250" data-coverage="500000">Basic Health Insurance - $250/month</option>
+                                    <option value="auto-full" data-name="Full Coverage Auto Insurance" data-price="125" data-coverage="500000">Full Coverage Auto Insurance - $125/month</option>
+                                    <option value="auto-basic" data-name="Basic Auto Insurance" data-price="65" data-coverage="100000">Basic Auto Insurance - $65/month</option>
+                                    <option value="home-standard" data-name="Standard Homeowners Insurance" data-price="95" data-coverage="350000">Standard Homeowners Insurance - $95/month</option>
+                                    <option value="life-term" data-name="Term Life Insurance" data-price="35" data-coverage="5000000">Term Life Insurance - $35/month</option>
+                                    <option value="travel-international" data-name="International Travel Insurance" data-price="75" data-coverage="500000">International Travel Insurance - $75/month</option>
+                                    <option value="business-liability" data-name="Business Liability Insurance" data-price="200" data-coverage="3000000">Business Liability Insurance - $200/month</option>
+                                </select>
+                                <svg class="select-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3>Personal Information</h3>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3>Address</h3>
+                        </div>
+                        <div class="form-group">
+                            <label for="street">Street Address *</label>
+                            <input type="text" id="street" name="street" required placeholder="123 Main St">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required placeholder="New York">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <input type="text" id="state" name="state" required placeholder="NY">
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code *</label>
+                                <input type="text" id="zip" name="zip" required pattern="[0-9]{5}" placeholder="10001">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coverage Options -->
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3>Coverage Options</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Coverage Amount: <span id="coverageValue">$50,000</span></label>
+                            <div class="range-container">
+                                <input type="range" id="coverageSlider" class="range-slider" min="10000" max="5000000" step="1000" value="50000">
+                                <div class="range-labels">
+                                    <span>$10,000</span>
+                                    <span>$5,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="deductible">Deductible Amount *</label>
+                            <div class="select-wrapper">
+                              <select id="deductible" name="deductible" required>
+                                <option value="" selected>Select deductible amount</option>
+                                <option value="0">$0</option>
+                                <option value="250">$250</option>
+                                <option value="500">$500</option>
+                                <option value="1000">$1,000</option>
+                                <option value="2500">$2,500</option>
+                                <option value="5000">$5,000</option>
+                              </select>
+                                <svg class="select-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms Agreement -->
+                    <div class="form-card agreement-card">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">
+                                I agree to the terms and conditions, privacy policy, and authorize SecureLife Insurance to process my application and contact me regarding this insurance policy. *
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large btn-full-width">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right Side - Summary -->
+            <div class="apply-summary-section">
+                <div class="summary-card">
+                    <div class="summary-header">
+                        <h3>Application Summary</h3>
+                    </div>
+                    <div class="summary-content" id="summaryContent">
+                        <div class="summary-placeholder">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                            </svg>
+                            <p>Select a product to see your summary</p>
+                        </div>
+                    </div>
+                    <div class="summary-details" id="summaryDetails" style="display: none;">
+                        <div class="summary-product">
+                            <span class="summary-label">Selected Product</span>
+                            <span class="summary-value" id="summaryProduct">-</span>
+                        </div>
+                        <div class="summary-premium">
+                            <span class="summary-label">Estimated Monthly Premium</span>
+                            <span class="summary-amount" id="summaryPremium">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Coverage</span>
+                            <span class="summary-value" id="summaryCoverage">$50,000</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Deductible</span>
+                            <span class="summary-value" id="summaryDeductible">$500</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Applicant</span>
+                            <span class="summary-value" id="summaryApplicant">-</span>
+                        </div>
+                        <div class="summary-disclaimer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                            <p>This is an estimate. Final premium will be determined after underwriting review.</p>
+                        </div>
+                    </div>
+                    <div class="summary-actions">
+                        <button type="submit" form="insuranceApplication" class="btn btn-primary btn-full-width btn-large">
+                            Submit Application
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="#2563eb"/>
+                        <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>SecureLife</span>
+                </a>
+                <p>Protecting what matters most to you with comprehensive insurance solutions since 2010.</p>
+                <ul class="footer-contact">
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        1-800-SECURE-1
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        info@securelife.com
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        123 Insurance Ave, NY 10001
+                    </li>
+                </ul>
+            </div>
+
+           <div class="footer-column">
+    <h4>Products</h4>
+    <ul class="footer-links">
+        <li><a href="products.html?category=health">Health Insurance</a></li>
+        <li><a href="products.html?category=auto">Auto Insurance</a></li>
+        <li><a href="products.html?category=home">Home Insurance</a></li>
+        <li><a href="products.html?category=life">Life Insurance</a></li>
+        <li><a href="products.html?category=travel">Travel Insurance</a></li>
+        <li><a href="products.html?category=business">Business Insurance</a></li>
+    </ul>
+</div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="calculator.html">Premium Calculator</a></li>
+                    <li><a href="apply.html">Apply Online</a></li>
+                    <li><a href="policies.html">Policy Management</a></li>
+                    <li><a href="#claims">Claims Center</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#support">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#news">News & Press</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SecureLife Insurance. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
